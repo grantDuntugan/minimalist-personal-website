@@ -1,0 +1,9 @@
+@font-face {
+  font-family: montserrat;
+  src: url(Montserrat-Regular.ttf);
+}
+
+body {
+  background-image: url("background.png");
+  font-family: montserrat !important;
+}
