@@ -4,6 +4,17 @@
 }
 
 body {
-  background-image: url("background.png");
+  background-image: url("./imgs/black_background.png");
+  background-size: cover;
   font-family: montserrat !important;
+}
+
+.social-link {
+  color: inherit;
+  transition-property: color;
+  transition-duration: 0.3s;
+}
+
+.social-link:hover {
+  color: #0d0e10;
 }
