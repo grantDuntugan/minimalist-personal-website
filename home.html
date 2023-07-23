@@ -19,178 +19,196 @@
     ></script>
   </head>
   <body>
-    <div class="jumbotron m-5">
-      <h1 class="display-4">Hi, I'm Grant Duntugan.</h1>
-      <p class="lead">I'm looking to become a software developer.</p>
-      <!-- <hr class="my-4" />
-      <p>Want to learn more about me?</p>
-      <p class="lead">
-        <a class="btn btn-primary btn-lg" href="#" role="button">Click here</a>
-      </p> -->
-    </div>
-
-    <section class="container text-white border-top border-bottom py-5">
-      <div class="row h3 mb-3">About Me</div>
-      <div class="row text-large">
-        <p>
-          I recently graduated from the University of California, San Diego with
-          a B.S. in Math-Computer Science and a minor in Cognitive Science. I've
-          spent a lot of time working with data analysis (with my favorite
-          analysis tool being Python) and creating my own projects just for fun.
-        </p>
-        <p>
-          In my free time, I like to take long walks around shopping malls
-          looking for boba, playing
-          <span
-            data-toggle="tooltip"
-            data-placement="top"
-            title="Right now, Zelda, Monster Hunter Rise, Valorant, Final Fantasy 16"
+    <section id="home">
+      <div class="jumbotron m-5">
+        <h1 class="display-4" style="text-shadow: 4px 5px rgb(214, 214, 214)">
+          Hi, I'm Grant Duntugan.
+        </h1>
+        <p class="lead">I'm looking to become a software developer.</p>
+        <hr class="my-4" />
+        <p>Want to learn more about me?</p>
+        <p class="lead">
+          <a
+            id="about-me-btn"
+            class="btn btn-primary btn-lg"
+            href="#"
+            role="button"
+            >Click here</a
           >
-            games
-          </span>
-          with my friends, and also singing some of my favorite songs (most of
-          them being J-pop or K-pop).
         </p>
       </div>
-    </section>
-    <section class="pt-5 pb-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <h3 class="mb-3 text-white">Work Experience</h3>
-          </div>
-          <div class="col-6 text-right">
-            <a
-              class="btn btn-primary mb-3 mr-1"
-              href="#workCarousel"
-              role="button"
-              data-slide="prev"
+
+      <!-- <section class="container text-white border-top border-bottom py-5">
+        <div class="row h3 mb-3">About Me</div>
+        <div class="row text-large">
+          <p>
+            I recently graduated from the University of California, San Diego
+            with a B.S. in Math-Computer Science and a minor in Cognitive
+            Science. I've spent a lot of time working with data analysis (with
+            my favorite analysis tool being Python) and creating my own projects
+            just for fun.
+          </p>
+          <p>
+            In my free time, I like to take long walks around shopping malls
+            looking for boba, playing
+            <span
+              data-toggle="tooltip"
+              data-placement="top"
+              title="Right now, Zelda, Monster Hunter Rise, Valorant, Final Fantasy 16"
             >
-              <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            <a
-              class="btn btn-primary mb-3"
-              href="#workCarousel"
-              role="button"
-              data-slide="next"
-            >
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-          <div class="col-12" style="min-height: 45vh">
-            <div id="workCarousel" class="carousel slide" data-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="card-group">
-                    <div class="card mr-4">
-                      <img
-                        class="img-fluid rounded p-3"
-                        alt="100%x280"
-                        src="./imgs/shc_logo.png"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">Stanford Health Care</h4>
-                        <p class="card-text">
-                          As an analyst intern, I am visualizing key company
-                          metrics to determine points of improvement, creating a
-                          process flow for data requests across the
-                          organization, and also measuring company project
-                          values to display company accomplishments.
-                        </p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >Tableau</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >Excel</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >SQL</small
-                        >
-                      </div>
-                    </div>
-                    <div class="card mr-4">
-                      <img
-                        class="img-fluid rounded p-3"
-                        alt="100%x280"
-                        src="./imgs/jccc_entrance.jpg"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          UCLA Jonsson Comprehensive Cancer Center
-                        </h4>
-                        <p class="card-text">
-                          As a programmer analyst intern, I was able to
-                          determine that more exercise reduces your chances of
-                          having cancer with an effect size of p <<< 0.01.
-                        </p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >R</small
-                        >
-                      </div>
-                    </div>
-                    <div class="card">
-                      <img
-                        class="img-fluid rounded p-3"
-                        alt="100%x280"
-                        src="./imgs/sdsc_building.jpg"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">
-                          San Diego Supercomputer Center
-                        </h4>
-                        <p class="card-text">
-                          As a software engineer intern, I was able to create an
-                          app with a team using agile methods that motivates
-                          people to exercise by competing with friends in a
-                          reward-system game!
-                        </p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >React Native</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >Firebase</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >Expo</small
-                        >
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="row">
-                    <div class="col-md-4 mb-3">
-                      <div class="card">
+              games
+            </span>
+            with my friends, and also singing some of my favorite songs (most of
+            them being J-pop or K-pop).
+          </p>
+        </div>
+      </section> -->
+      <section class="pt-5 pb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-3 text-white">Work Experience</h3>
+            </div>
+            <div class="col-6 text-right">
+              <a
+                class="btn btn-primary mb-3 mr-1"
+                href="#workCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+              <a
+                class="btn btn-primary mb-3"
+                href="#workCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="col-12" style="min-height: 45vh">
+              <div
+                id="workCarousel"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card-group">
+                      <div class="card mr-4">
                         <img
                           class="img-fluid rounded p-3"
                           alt="100%x280"
-                          src="./imgs/coding_minds_logo.png"
+                          src="./imgs/shc_logo.png"
                         />
                         <div class="card-body">
-                          <h4 class="card-title">Coding Minds Academy</h4>
+                          <h4 class="card-title">Stanford Health Care</h4>
                           <p class="card-text">
-                            As a programming teacher, I teach kids from
-                            elementary school to high school how to program in
-                            Java, Python, and Lua and prepare them for projects
-                            and even coding competitions.
+                            As an analyst intern, I am visualizing key company
+                            metrics to determine points of improvement, creating
+                            a process flow for data requests across the
+                            organization, and also measuring company project
+                            values to display company accomplishments.
                           </p>
                         </div>
                         <div class="card-footer">
                           <small class="bg-primary rounded-pill text-white p-2"
-                            >Java</small
+                            >Tableau</small
                           >
                           <small class="bg-primary rounded-pill text-white p-2"
-                            >Python</small
+                            >Excel</small
                           >
                           <small class="bg-primary rounded-pill text-white p-2"
-                            >Lua</small
+                            >SQL</small
                           >
+                        </div>
+                      </div>
+                      <div class="card mr-4">
+                        <img
+                          class="img-fluid rounded p-3"
+                          alt="100%x280"
+                          src="./imgs/jccc_entrance.jpg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">
+                            UCLA Jonsson Comprehensive Cancer Center
+                          </h4>
+                          <p class="card-text">
+                            As a programmer analyst intern, I was able to
+                            determine that more exercise reduces your chances of
+                            having cancer with an effect size of p <<< 0.01.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >R</small
+                          >
+                        </div>
+                      </div>
+                      <div class="card">
+                        <img
+                          class="img-fluid rounded p-3"
+                          alt="100%x280"
+                          src="./imgs/sdsc_building.jpg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">
+                            San Diego Supercomputer Center
+                          </h4>
+                          <p class="card-text">
+                            As a software engineer intern, I was able to create
+                            an app with a team using agile methods that
+                            motivates people to exercise by competing with
+                            friends in a reward-system game!
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >React Native</small
+                          >
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >Firebase</small
+                          >
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >Expo</small
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                      <div class="col-md-4 mb-3">
+                        <div class="card">
+                          <img
+                            class="img-fluid rounded p-3"
+                            alt="100%x280"
+                            src="./imgs/coding_minds_logo.png"
+                          />
+                          <div class="card-body">
+                            <h4 class="card-title">Coding Minds Academy</h4>
+                            <p class="card-text">
+                              As a programming teacher, I teach kids from
+                              elementary school to high school how to program in
+                              Java, Python, and Lua and prepare them for
+                              projects and even coding competitions.
+                            </p>
+                          </div>
+                          <div class="card-footer">
+                            <small
+                              class="bg-primary rounded-pill text-white p-2"
+                              >Java</small
+                            >
+                            <small
+                              class="bg-primary rounded-pill text-white p-2"
+                              >Python</small
+                            >
+                            <small
+                              class="bg-primary rounded-pill text-white p-2"
+                              >Lua</small
+                            >
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -200,302 +218,349 @@
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="pt-5 pb-5 mb-3">
-      <div class="container">
-        <div class="row">
-          <div class="col-6">
-            <h3 class="mb-3 text-white">Projects</h3>
-          </div>
-          <div class="col-6 text-right">
-            <a
-              class="btn btn-primary mb-3 mr-1"
-              href="#projectCarousel"
-              role="button"
-              data-slide="prev"
-            >
-              <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            <a
-              class="btn btn-primary mb-3"
-              href="#projectCarousel"
-              role="button"
-              data-slide="next"
-            >
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-          </div>
-          <div class="col-12" style="min-height: 80vh">
-            <div
-              id="projectCarousel"
-              class="carousel slide"
-              data-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <div class="card-group">
-                    <a
-                      class="card mr-4"
-                      data-toggle="modal"
-                      data-target="#fingerBreakerModal"
-                    >
-                      <img
-                        class="img-fluid rounded p-3"
-                        alt="100%x280"
-                        src="./imgs/fb-enemy.png"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">Finger Breaker</h4>
-                        <p class="card-text">
-                          Ever needed to get better at typing? Fight monsters
-                          and gain money in this idle-style game where you type
-                          to fight!
-                        </p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >Python</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >Pygame</small
-                        >
-                      </div>
-                    </a>
+      <section class="pt-5 pb-5 mb-3">
+        <div class="container">
+          <div class="row">
+            <div class="col-6">
+              <h3 class="mb-3 text-white">Projects</h3>
+            </div>
+            <div class="col-6 text-right">
+              <a
+                class="btn btn-primary mb-3 mr-1"
+                href="#projectCarousel"
+                role="button"
+                data-slide="prev"
+              >
+                <i class="fa-solid fa-arrow-left"></i>
+              </a>
+              <a
+                class="btn btn-primary mb-3"
+                href="#projectCarousel"
+                role="button"
+                data-slide="next"
+              >
+                <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+            <div class="col-12" style="min-height: 80vh">
+              <div
+                id="projectCarousel"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="card-group">
+                      <a
+                        class="card mr-4"
+                        data-toggle="modal"
+                        data-target="#fingerBreakerModal"
+                      >
+                        <img
+                          class="img-fluid rounded p-3"
+                          alt="100%x280"
+                          src="./imgs/fb-enemy.png"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Finger Breaker</h4>
+                          <p class="card-text">
+                            Ever needed to get better at typing? Fight monsters
+                            and gain money in this idle-style game where you
+                            type to fight!
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >Python</small
+                          >
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >Pygame</small
+                          >
+                        </div>
+                      </a>
 
-                    <a
-                      class="card mr-4"
-                      href="https://www.youtube.com/watch?v=aRnYhrHGSwc"
-                      target="_blank"
-                    >
-                      <img
-                        class="img-fluid rounded p-3"
-                        alt="100%x280"
-                        src="./imgs/espresso-leaderboard.png"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">Espresso</h4>
-                        <p class="card-text">
-                          Compete with friends in productivity by inviting your
-                          friends to a group and creating tasks to complete!
-                          Those who complete tasks gain points on the
-                          leaderboard and can redeem rewards! I made this at my
-                          time at San Diego Supercomputer Center.
-                        </p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >React Native</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >Firebase</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >Expo</small
-                        >
-                      </div>
-                    </a>
-                    <a
-                      class="card"
-                      href="https://github.com/COGS118A/Group012-Wi23/blob/main/FinalProjectGroup012-Wi23.ipynb"
-                      target="_blank"
-                    >
-                      <img
-                        class="img-fluid rounded p-3"
-                        alt="100%x280"
-                        src="./imgs/stars.jpg"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">Machine Learning and Stars</h4>
-                        <p class="card-text">
-                          Given a star's brightness, size, distance from us, and
-                          some other information, can I figure out if the star
-                          is a dwarf or a giant? A classification project from
-                          class in which I examine and test multiple machine
-                          learning algorithms such as K-nearest-neighbors,
-                          regression, forests, and boosting.
-                        </p>
-                      </div>
+                      <a
+                        class="card mr-4"
+                        href="https://www.youtube.com/watch?v=aRnYhrHGSwc"
+                        target="_blank"
+                      >
+                        <img
+                          class="img-fluid rounded p-3"
+                          alt="100%x280"
+                          src="./imgs/espresso-leaderboard.png"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Espresso</h4>
+                          <p class="card-text">
+                            Compete with friends in productivity by inviting
+                            your friends to a group and creating tasks to
+                            complete! Those who complete tasks gain points on
+                            the leaderboard and can redeem rewards! I made this
+                            at my time at San Diego Supercomputer Center.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >React Native</small
+                          >
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >Firebase</small
+                          >
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >Expo</small
+                          >
+                        </div>
+                      </a>
+                      <a
+                        class="card"
+                        href="https://github.com/COGS118A/Group012-Wi23/blob/main/FinalProjectGroup012-Wi23.ipynb"
+                        target="_blank"
+                      >
+                        <img
+                          class="img-fluid rounded p-3"
+                          alt="100%x280"
+                          src="./imgs/stars.jpg"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Machine Learning and Stars</h4>
+                          <p class="card-text">
+                            Given a star's brightness, size, distance from us,
+                            and some other information, can I figure out if the
+                            star is a dwarf or a giant? A classification project
+                            from class in which I examine and test multiple
+                            machine learning algorithms such as
+                            K-nearest-neighbors, regression, forests, and
+                            boosting.
+                          </p>
+                        </div>
 
-                      <div class="card-footer">
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >Python</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >Scikit-learn</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >Pandas</small
-                        >
-                      </div>
-                    </a>
+                        <div class="card-footer">
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >Python</small
+                          >
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >Scikit-learn</small
+                          >
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >Pandas</small
+                          >
+                        </div>
+                      </a>
+                    </div>
                   </div>
-                </div>
-                <div class="carousel-item">
-                  <div class="card-group">
-                    <a
-                      class="card mr-4"
-                      href="https://impasta-rosta.netlify.app/"
-                      target="_blank"
-                    >
-                      <img
-                        class="img-fluid rounded p-3"
-                        alt="100%x280"
-                        src="./imgs/impasta-home.png"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">Impasta Rosta</h4>
-                        <p class="card-text">
-                          Ever wanted to cook but didn't know how? Use this
-                          recipe app to find a recipe right for you. Save it to
-                          your cookbook, read it while you cook, and even save
-                          small adjustments if the recipe doesn't work out for
-                          you! A project I made as part of a software
-                          engineering class.
-                        </p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >HTML</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >CSS</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >JavaScript</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >APIs</small
-                        >
-                      </div>
-                    </a>
+                  <div class="carousel-item">
+                    <div class="card-group">
+                      <a
+                        class="card mr-4"
+                        href="https://impasta-rosta.netlify.app/"
+                        target="_blank"
+                      >
+                        <img
+                          class="img-fluid rounded p-3"
+                          alt="100%x280"
+                          src="./imgs/impasta-home.png"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Impasta Rosta</h4>
+                          <p class="card-text">
+                            Ever wanted to cook but didn't know how? Use this
+                            recipe app to find a recipe right for you. Save it
+                            to your cookbook, read it while you cook, and even
+                            save small adjustments if the recipe doesn't work
+                            out for you! A project I made as part of a software
+                            engineering class.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >HTML</small
+                          >
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >CSS</small
+                          >
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >JavaScript</small
+                          >
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >APIs</small
+                          >
+                        </div>
+                      </a>
 
-                    <a
-                      class="card"
-                      href="https://feudgame.netlify.app/"
-                      target="_blank"
-                    >
-                      <img
-                        class="img-fluid rounded p-3"
-                        alt="100%x280"
-                        src="./imgs/feud_game.png"
-                      />
-                      <div class="card-body">
-                        <h4 class="card-title">Family Feud Clone</h4>
-                        <p class="card-text">
-                          Make up your own questions to play Family Feud with
-                          friends and family! Try to guess what the top choice
-                          of the survey is! I made this for a work-social event
-                          at my Stanford internship.
-                        </p>
-                      </div>
-                      <div class="card-footer">
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >HTML</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >CSS</small
-                        >
-                        <small class="bg-primary rounded-pill text-white p-2"
-                          >JavaScript</small
-                        >
-                      </div>
-                    </a>
+                      <a
+                        class="card"
+                        href="https://feudgame.netlify.app/"
+                        target="_blank"
+                      >
+                        <img
+                          class="img-fluid rounded p-3"
+                          alt="100%x280"
+                          src="./imgs/feud_game.png"
+                        />
+                        <div class="card-body">
+                          <h4 class="card-title">Family Feud Clone</h4>
+                          <p class="card-text">
+                            Make up your own questions to play Family Feud with
+                            friends and family! Try to guess what the top choice
+                            of the survey is! I made this for a work-social
+                            event at my Stanford internship.
+                          </p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >HTML</small
+                          >
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >CSS</small
+                          >
+                          <small class="bg-primary rounded-pill text-white p-2"
+                            >JavaScript</small
+                          >
+                        </div>
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <footer
-        class="footer fixed-bottom d-flex justify-content-around p-2"
-        style="background-color: #8c5052"
-      >
-        <a
-          class="social-link"
-          href="https://github.com/grantDuntugan"
-          target="_blank"
+        <footer
+          class="footer fixed-bottom d-flex justify-content-around p-2"
+          style="background-color: #8c5052"
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            fill="currentColor"
-            class="bi bi-github"
-            viewBox="0 0 16 16"
+          <a
+            class="social-link"
+            href="https://github.com/grantDuntugan"
+            target="_blank"
           >
-            <path
-              d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
-            />
-          </svg>
-        </a>
-        <a
-          class="social-link"
-          href="https://www.linkedin.com/in/grant-duntugan-23587a1b2/"
-          target="_blank"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            fill="currentColor"
-            class="bi bi-linkedin"
-            viewBox="0 0 16 16"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-github"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+              />
+            </svg>
+          </a>
+          <a
+            class="social-link"
+            href="https://www.linkedin.com/in/grant-duntugan-23587a1b2/"
+            target="_blank"
           >
-            <path
-              d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-            />
-          </svg>
-        </a>
-        <a
-          id="mail-info"
-          class="social-link"
-          data-toggle="tooltip"
-          data-placement="top"
-          title="grantdunt@gmail.com"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
-            fill="currentColor"
-            class="bi bi-envelope"
-            viewBox="0 0 16 16"
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-linkedin"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
+              />
+            </svg>
+          </a>
+          <a
+            id="mail-info"
+            class="social-link"
+            data-toggle="tooltip"
+            data-placement="top"
+            title="grantdunt@gmail.com"
           >
-            <path
-              d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
-            />
-          </svg>
-        </a>
-      </footer>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="32"
+              height="32"
+              fill="currentColor"
+              class="bi bi-envelope"
+              viewBox="0 0 16 16"
+            >
+              <path
+                d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4Zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2Zm13 2.383-4.708 2.825L15 11.105V5.383Zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741ZM1 11.105l4.708-2.897L1 5.383v5.722Z"
+              />
+            </svg>
+          </a>
+        </footer>
 
-      <div
-        class="modal fade"
-        id="fingerBreakerModal"
-        tabindex="-1"
-        role="dialog"
-        aria-labelledby="fingerBreakerModal"
-        aria-hidden="true"
-      >
         <div
-          class="modal-dialog modal-dialog-centered"
-          role="document"
-          style="min-height: 50vh; min-width: 50vw"
+          class="modal fade"
+          id="fingerBreakerModal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="fingerBreakerModal"
+          aria-hidden="true"
         >
-          <div class="modal-content">
-            <div class="embed-responsive embed-responsive-4by3">
-              <iframe
-                class="embed-responsive-item"
-                src="./vids/finger_breaker_vid.mp4"
-                allow="fullscreen"
-                sandbox
-              ></iframe>
+          <div
+            class="modal-dialog modal-dialog-centered"
+            role="document"
+            style="min-height: 50vh; min-width: 50vw"
+          >
+            <div class="modal-content">
+              <div class="embed-responsive embed-responsive-4by3">
+                <iframe
+                  class="embed-responsive-item"
+                  src="./vids/finger_breaker_vid.mp4"
+                  allow="fullscreen"
+                  sandbox
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
+      </section>
+    </section>
+    <section id="about-me" class="d-none" style="opacity: 0">
+      <div class="container text-white py-5">
+        <h1 class="display-4 align-text-center">About Me</h1>
+        <p class="lead">
+          I recently graduated from the University of California, San Diego with
+          a B.S. in Math-Computer Science and a minor in Cognitive Science. I've
+          spent a lot of time working with data analysis (with my favorite
+          analysis tool being Python) and creating my own projects just for fun.
+          Below, you'll see some of the things I enjoy the most.
+        </p>
       </div>
+
+      <section class="text-white border-bottom py-5">
+        <div
+          class="hobby-card card text-white"
+          style="background-color: #343a3f"
+        >
+          <div id="boba-img-container" class="card-img d-flex">
+            <img class="boba-img card-img w-25" src="imgs/computer_boba.JPG" />
+            <img class="boba-img card-img w-25" src="imgs/IMG_5240.JPG" />
+            <img class="boba-img card-img w-25" src="imgs/IMG_5250.JPG" />
+            <img class="boba-img card-img w-25" src="imgs/IMG_5283.JPG" />
+          </div>
+          <div
+            class="card-img-overlay d-flex flex-column justify-content-center"
+          >
+            <h5 id="boba-title" class="card-title display-4 text-center">
+              Boba
+            </h5>
+
+            <p id="boba-text" class="card-text text-center" style="opacity: 0">
+              I love finding all the best boba drinks that a city has to offer.
+              I don't have any specific preference - I like fruit teas, milk
+              teas, and milk lattes. However, I do have some favorites in mind.
+              The mango pomelo sago from Yifang in Torrance is extremely good as
+              the mangos there are very fresh, and the honey lemon fruit tea
+              from any Happy Lemon is one of the best mixes of honey and lemon
+              I've ever tasted. Of course, there are more such as the Oolong
+              Milk Tea from Wushiland in La Jolla and the Hong Kong Milk Tea
+              from Loose Leaf in Long Beach, and just Thai Tea no matter where
+              you go.
+            </p>
+          </div>
+        </div>
+      </section>
     </section>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
