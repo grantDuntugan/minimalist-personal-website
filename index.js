@@ -1,14 +1,29 @@
 function swapToAboutPage() {}
 let btn = document.getElementById("about-me-btn");
 btn.addEventListener("click", () => {
+  document.getElementById("home").classList.remove("fade-in");
   document.getElementById("home").classList.add("fade-out");
 
   setTimeout(() => {
     document.getElementById("home").classList.add("d-none");
 
     document.getElementById("about-me").classList.remove("d-none");
+    document.getElementById("about-me").classList.remove("fade-out");
     document.getElementById("about-me").classList.add("fade-in");
-  }, 2000);
+  }, 1000);
+});
+
+btn = document.querySelector("nav>a");
+btn.addEventListener("click", () => {
+  document.getElementById("about-me").classList.remove("fade-in");
+  document.getElementById("about-me").classList.add("fade-out");
+
+  setTimeout(() => {
+    document.getElementById("about-me").classList.add("d-none");
+    document.getElementById("home").classList.remove("fade-out");
+    document.getElementById("home").classList.remove("d-none");
+    document.getElementById("home").classList.add("fade-in");
+  }, 1000);
 });
 
 hobbiesClicked = {
