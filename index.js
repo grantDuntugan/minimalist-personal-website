@@ -56,11 +56,24 @@ bobaCard.addEventListener("click", () => {
     cont.style.animationDuration = "2s";
     cont.style.animationDelay = "8s";
 
+    let clickMe = document.getElementById("boba-click-me");
+    clickMe.classList.add("fade-out");
     setTimeout(() => {
+      clickMe.classList.add("d-none");
+      document.querySelector("#boba-click-me>div").classList.add("d-none");
+      document.querySelector("#boba-click-me>img").classList.add("d-none");
+    }, 1000);
+    setTimeout(() => {
+      let title = document.getElementById("boba-title");
       let text = document.getElementById("boba-text");
+      text.classList.remove("d-none");
+      title.classList.remove("d-none");
       text.style.animationName = "fade-in";
       text.style.animationFillMode = "forwards";
       text.style.animationDuration = "2s";
+      title.style.animationName = "fade-in";
+      title.style.animationFillMode = "forwards";
+      title.style.animationDuration = "2s";
     }, 10000);
   }
 });
