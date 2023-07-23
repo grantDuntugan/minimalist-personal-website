@@ -84,7 +84,7 @@
                   <div class="card-group">
                     <div class="card mr-4">
                       <img
-                        class="img-fluid"
+                        class="img-fluid rounded p-3"
                         alt="100%x280"
                         src="./imgs/shc_logo.png"
                       />
@@ -112,7 +112,7 @@
                     </div>
                     <div class="card mr-4">
                       <img
-                        class="img-fluid"
+                        class="img-fluid rounded p-3"
                         alt="100%x280"
                         src="./imgs/jccc_entrance.jpg"
                       />
@@ -134,7 +134,7 @@
                     </div>
                     <div class="card">
                       <img
-                        class="img-fluid"
+                        class="img-fluid rounded p-3"
                         alt="100%x280"
                         src="./imgs/sdsc_building.jpg"
                       />
@@ -168,7 +168,7 @@
                     <div class="col-md-4 mb-3">
                       <div class="card">
                         <img
-                          class="img-fluid"
+                          class="img-fluid rounded p-3"
                           alt="100%x280"
                           src="./imgs/coding_minds_logo.png"
                         />
@@ -236,9 +236,13 @@
               <div class="carousel-inner">
                 <div class="carousel-item active">
                   <div class="card-group">
-                    <div class="card mr-4">
+                    <a
+                      class="card mr-4"
+                      data-toggle="modal"
+                      data-target="#fingerBreakerModal"
+                    >
                       <img
-                        class="img-fluid"
+                        class="img-fluid rounded p-3"
                         alt="100%x280"
                         src="./imgs/fb-enemy.png"
                       />
@@ -258,11 +262,15 @@
                           >Pygame</small
                         >
                       </div>
-                    </div>
+                    </a>
 
-                    <div class="card mr-4">
+                    <a
+                      class="card mr-4"
+                      href="https://www.youtube.com/watch?v=aRnYhrHGSwc"
+                      target="_blank"
+                    >
                       <img
-                        class="img-fluid"
+                        class="img-fluid rounded p-3"
                         alt="100%x280"
                         src="./imgs/espresso-leaderboard.png"
                       />
@@ -287,11 +295,14 @@
                           >Expo</small
                         >
                       </div>
-                    </div>
-
-                    <div class="card">
+                    </a>
+                    <a
+                      class="card"
+                      href="https://github.com/COGS118A/Group012-Wi23/blob/main/FinalProjectGroup012-Wi23.ipynb"
+                      target="_blank"
+                    >
                       <img
-                        class="img-fluid"
+                        class="img-fluid rounded p-3"
                         alt="100%x280"
                         src="./imgs/stars.jpg"
                       />
@@ -306,14 +317,7 @@
                           regression, forests, and boosting.
                         </p>
                       </div>
-                      <a
-                        style="align-self: center"
-                        class="btn btn-primary rounded w-75 mb-5"
-                        href="https://github.com/COGS118A/Group012-Wi23/blob/main/FinalProjectGroup012-Wi23.ipynb"
-                        target="_blank"
-                      >
-                        Open GitHub report
-                      </a>
+
                       <div class="card-footer">
                         <small class="bg-primary rounded-pill text-white p-2"
                           >Python</small
@@ -325,14 +329,18 @@
                           >Pandas</small
                         >
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
                 <div class="carousel-item">
                   <div class="card-group">
-                    <div class="card mr-4">
+                    <a
+                      class="card mr-4"
+                      href="https://impasta-rosta.netlify.app/"
+                      target="_blank"
+                    >
                       <img
-                        class="img-fluid"
+                        class="img-fluid rounded p-3"
                         alt="100%x280"
                         src="./imgs/impasta-home.png"
                       />
@@ -347,14 +355,6 @@
                           engineering class.
                         </p>
                       </div>
-                      <a
-                        style="align-self: center"
-                        class="btn btn-primary rounded w-75 mb-5"
-                        href="https://impasta-rosta.netlify.app/"
-                        target="_blank"
-                      >
-                        Open site
-                      </a>
                       <div class="card-footer">
                         <small class="bg-primary rounded-pill text-white p-2"
                           >HTML</small
@@ -369,11 +369,15 @@
                           >APIs</small
                         >
                       </div>
-                    </div>
+                    </a>
 
-                    <div class="card">
+                    <a
+                      class="card"
+                      href="https://feudgame.netlify.app/"
+                      target="_blank"
+                    >
                       <img
-                        class="img-fluid"
+                        class="img-fluid rounded p-3"
                         alt="100%x280"
                         src="./imgs/feud_game.png"
                       />
@@ -397,7 +401,7 @@
                           >JavaScript</small
                         >
                       </div>
-                    </div>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -446,6 +450,32 @@
           </svg>
         </a>
       </footer>
+
+      <div
+        class="modal fade"
+        id="fingerBreakerModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="fingerBreakerModal"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal-dialog-centered"
+          role="document"
+          style="min-height: 50vh; min-width: 50vw"
+        >
+          <div class="modal-content">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe
+                class="embed-responsive-item"
+                src="./vids/finger_breaker_vid.mp4"
+                allow="fullscreen"
+                sandbox
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -462,7 +492,6 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
-
     <script src="index.js"></script>
   </body>
 </html>

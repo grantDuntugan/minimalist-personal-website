@@ -18,3 +18,20 @@ body {
 .social-link:hover {
   color: #0d0e10;
 }
+
+.card {
+  border-radius: 20px !important;
+}
+
+a.card {
+  color: inherit;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+a.card:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+  background-color: #cccccc;
+}
