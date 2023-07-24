@@ -539,16 +539,16 @@
               class="container d-flex justify-content-center align-items-center flex-column"
             >
               <img class="img-fluid w-25" src="imgs/wink_7302035.png" />
-              <div class="card-title display-4 text-center">Click me!</div>
+              <div class="card-title h5 text-center">Click me!</div>
             </div>
-            <h5 id="boba-title" class="card-title display-4 text-center d-none">
+            <h5 id="boba-title" class="card-title h5 text-center d-none">
               Boba
             </h5>
 
             <p
               id="boba-text"
               class="card-text text-center d-none"
-              style="opacity: 0"
+              style="opacity: 0; overflow: auto"
             >
               I love finding all the best boba drinks that a city has to offer.
               I don't have any specific preference - I like fruit teas, milk
@@ -565,49 +565,39 @@
         </div>
       </section>
 
-      <section class="text-white py-5">
-        <div
-          class="hobby-card card text-white"
-          style="background-color: #343a3f"
-        >
-          <div id="boba-img-container" class="card-img d-flex">
-            <img
-              class="place-holder card-img w-25"
-              src="imgs/computer_boba.JPG"
-              style="opacity: 0"
-            />
-          </div>
+      <section
+        class="container-fluid text-white w-100 py-5"
+        style="background-color: #343a3f; border-radius: 20px"
+      >
+        <div class="card-title text-center">
+          <h5 class="display-4 text-center">My favorite games</h5>
+          <img
+            class="image-fluid"
+            src="imgs/game-controller_2331846.png"
+            style="width: 10vw"
+          />
+        </div>
+        <div class="d-flex flex-row justify-content-around w-100">
           <div
-            class="card-img-overlay d-flex flex-row justify-content-around align-items-center"
-          >
-            <div class="card-title text-center">
-              <h3 class="display-4 text-center">My favorite games</h3>
-              <img
-                class="image-fluid w-25"
-                src="imgs/game-controller_2331846.png"
-              />
-            </div>
-            <div
-              class="game-card card"
-              style="background-image: url('./imgs/mhr.jpg')"
-              data-toggle="tooltip"
-              data-offset="0 2vh"
-              title="Monster Hunter Rise"
-              custom
-            ></div>
-            <div
-              class="game-card card"
-              style="background-image: url('./imgs/ff16.png')"
-              data-toggle="tooltip"
-              title="Final Fantasy 16"
-            ></div>
-            <div
-              class="game-card card"
-              style="background-image: url('./imgs/valorant.jpg')"
-              data-toggle="tooltip"
-              title="Valorant"
-            ></div>
-          </div>
+            class="game-card"
+            style="background-image: url('./imgs/mhr.jpg')"
+            data-toggle="tooltip"
+            data-offset="0 2vh"
+            title="Monster Hunter Rise"
+            custom
+          ></div>
+          <div
+            class="game-card"
+            style="background-image: url('./imgs/ff16.png')"
+            data-toggle="tooltip"
+            title="Final Fantasy 16"
+          ></div>
+          <div
+            class="game-card"
+            style="background-image: url('./imgs/valorant.jpg')"
+            data-toggle="tooltip"
+            title="Valorant"
+          ></div>
         </div>
       </section>
 
