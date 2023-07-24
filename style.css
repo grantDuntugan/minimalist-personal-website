@@ -87,3 +87,24 @@ a.card:hover {
     opacity: 0.2;
   }
 }
+
+.game-card {
+  transition: transform 0.6s ease;
+  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
+  border-radius: 0;
+  border: 0;
+  margin-bottom: 1.5em;
+  width: 20rem;
+  height: 10rem;
+  background-position: center;
+  background-size: cover;
+}
+
+.game-card:hover {
+  transform: scale(1.4);
+  z-index: 1;
+}
+
+.tooltip {
+  font-size: 10rem;
+}
