@@ -1,110 +1,392 @@
-@font-face {
-  font-family: montserrat;
-  src: url(Montserrat-Regular.ttf);
+::-webkit-scrollbar {
+  width: 0px; /* remove scrollbar space */
+  background: transparent; /* optional: just make scrollbar invisible */
 }
 
-body {
-  background-image: url("./imgs/black_background.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  font-family: montserrat !important;
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+  background: transparent;
 }
 
-#boba-title {
-  transition-property: position;
-  transition-duration: 1s;
+.gallery {
+  padding: 10vh 0;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  overflow-x: auto;
+  -webkit-overflow-scroll: touch;
 }
-
-.hobby-card {
-  transition-property: background-color;
-  transition-duration: 1s;
+.gallery > .album-slot {
+  white-space: normal;
+  width: 200px;
+  width: 12vw;
+  height: 9vw;
+  overflow: hidden;
+  -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent), to(rgba(250, 250, 250, 0.1)));
+  display: inline-block;
+  margin-left: -4vw;
+  transform-origin: 40% 40%;
+  transform: translate3d(0, 0, 0) perspective(15vw) rotateY(-55deg);
+  position: relative;
+  opacity: 1;
+  transition: box-shadow 0.2s ease-out, transform 0.2s ease-out;
 }
-
-.fade-out {
-  animation: fade-out 1s;
-  animation-fill-mode: forwards;
+.gallery > .album-slot:hover, .gallery > .album-slot:active {
+  transform: translate3d(1vw, 0, 0) perspective(15vw) scale(1.1) rotateY(-35deg);
+  z-index: 99;
 }
-
-.fade-in {
-  animation: fade-in 1s;
-  animation-fill-mode: forwards;
+.gallery > .album-slot:hover:after, .gallery > .album-slot:active:after {
+  opacity: 0.2;
 }
-
-.social-link {
-  color: inherit;
-  transition-property: color;
-  transition-duration: 2s;
+.gallery > .album-slot:hover span, .gallery > .album-slot:active span {
+  opacity: 0.9;
+  transform: translate(0);
 }
-
-.social-link:hover {
-  color: #0d0e10;
-}
-
-.card {
-  border-radius: 20px !important;
-}
-
-a.card {
-  color: inherit;
-  transition-property: background-color;
-  transition-duration: 0.5s;
-}
-
-a.card:hover {
-  cursor: pointer;
-  color: inherit;
-  text-decoration: none;
-  background-color: #cccccc;
-}
-
-.boba-img {
-  opacity: 0;
-}
-
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-out {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes darken {
-  0% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 0.2;
-  }
-}
-
-.game-card {
-  transition: transform 0.6s ease;
-  box-shadow: 0 4px 6px 0 rgba(22, 22, 26, 0.18);
-  border-radius: 20px;
-  border: 0;
-  margin-bottom: 1.5em;
-  width: 30vh;
-  height: 15vh;
-  background-position: center;
-  background-size: cover;
-}
-
-.game-card:hover {
-  transform: scale(1.4);
+.gallery > .album-slot:nth-child(99) {
   z-index: 1;
 }
-
-.tooltip {
-  font-size: 10rem;
+.gallery > .album-slot:nth-child(98) {
+  z-index: 2;
 }
+.gallery > .album-slot:nth-child(97) {
+  z-index: 3;
+}
+.gallery > .album-slot:nth-child(96) {
+  z-index: 4;
+}
+.gallery > .album-slot:nth-child(95) {
+  z-index: 5;
+}
+.gallery > .album-slot:nth-child(94) {
+  z-index: 6;
+}
+.gallery > .album-slot:nth-child(93) {
+  z-index: 7;
+}
+.gallery > .album-slot:nth-child(92) {
+  z-index: 8;
+}
+.gallery > .album-slot:nth-child(91) {
+  z-index: 9;
+}
+.gallery > .album-slot:nth-child(90) {
+  z-index: 10;
+}
+.gallery > .album-slot:nth-child(89) {
+  z-index: 11;
+}
+.gallery > .album-slot:nth-child(88) {
+  z-index: 12;
+}
+.gallery > .album-slot:nth-child(87) {
+  z-index: 13;
+}
+.gallery > .album-slot:nth-child(86) {
+  z-index: 14;
+}
+.gallery > .album-slot:nth-child(85) {
+  z-index: 15;
+}
+.gallery > .album-slot:nth-child(84) {
+  z-index: 16;
+}
+.gallery > .album-slot:nth-child(83) {
+  z-index: 17;
+}
+.gallery > .album-slot:nth-child(82) {
+  z-index: 18;
+}
+.gallery > .album-slot:nth-child(81) {
+  z-index: 19;
+}
+.gallery > .album-slot:nth-child(80) {
+  z-index: 20;
+}
+.gallery > .album-slot:nth-child(79) {
+  z-index: 21;
+}
+.gallery > .album-slot:nth-child(78) {
+  z-index: 22;
+}
+.gallery > .album-slot:nth-child(77) {
+  z-index: 23;
+}
+.gallery > .album-slot:nth-child(76) {
+  z-index: 24;
+}
+.gallery > .album-slot:nth-child(75) {
+  z-index: 25;
+}
+.gallery > .album-slot:nth-child(74) {
+  z-index: 26;
+}
+.gallery > .album-slot:nth-child(73) {
+  z-index: 27;
+}
+.gallery > .album-slot:nth-child(72) {
+  z-index: 28;
+}
+.gallery > .album-slot:nth-child(71) {
+  z-index: 29;
+}
+.gallery > .album-slot:nth-child(70) {
+  z-index: 30;
+}
+.gallery > .album-slot:nth-child(69) {
+  z-index: 31;
+}
+.gallery > .album-slot:nth-child(68) {
+  z-index: 32;
+}
+.gallery > .album-slot:nth-child(67) {
+  z-index: 33;
+}
+.gallery > .album-slot:nth-child(66) {
+  z-index: 34;
+}
+.gallery > .album-slot:nth-child(65) {
+  z-index: 35;
+}
+.gallery > .album-slot:nth-child(64) {
+  z-index: 36;
+}
+.gallery > .album-slot:nth-child(63) {
+  z-index: 37;
+}
+.gallery > .album-slot:nth-child(62) {
+  z-index: 38;
+}
+.gallery > .album-slot:nth-child(61) {
+  z-index: 39;
+}
+.gallery > .album-slot:nth-child(60) {
+  z-index: 40;
+}
+.gallery > .album-slot:nth-child(59) {
+  z-index: 41;
+}
+.gallery > .album-slot:nth-child(58) {
+  z-index: 42;
+}
+.gallery > .album-slot:nth-child(57) {
+  z-index: 43;
+}
+.gallery > .album-slot:nth-child(56) {
+  z-index: 44;
+}
+.gallery > .album-slot:nth-child(55) {
+  z-index: 45;
+}
+.gallery > .album-slot:nth-child(54) {
+  z-index: 46;
+}
+.gallery > .album-slot:nth-child(53) {
+  z-index: 47;
+}
+.gallery > .album-slot:nth-child(52) {
+  z-index: 48;
+}
+.gallery > .album-slot:nth-child(51) {
+  z-index: 49;
+}
+.gallery > .album-slot:nth-child(50) {
+  z-index: 50;
+}
+.gallery > .album-slot:nth-child(49) {
+  z-index: 51;
+}
+.gallery > .album-slot:nth-child(48) {
+  z-index: 52;
+}
+.gallery > .album-slot:nth-child(47) {
+  z-index: 53;
+}
+.gallery > .album-slot:nth-child(46) {
+  z-index: 54;
+}
+.gallery > .album-slot:nth-child(45) {
+  z-index: 55;
+}
+.gallery > .album-slot:nth-child(44) {
+  z-index: 56;
+}
+.gallery > .album-slot:nth-child(43) {
+  z-index: 57;
+}
+.gallery > .album-slot:nth-child(42) {
+  z-index: 58;
+}
+.gallery > .album-slot:nth-child(41) {
+  z-index: 59;
+}
+.gallery > .album-slot:nth-child(40) {
+  z-index: 60;
+}
+.gallery > .album-slot:nth-child(39) {
+  z-index: 61;
+}
+.gallery > .album-slot:nth-child(38) {
+  z-index: 62;
+}
+.gallery > .album-slot:nth-child(37) {
+  z-index: 63;
+}
+.gallery > .album-slot:nth-child(36) {
+  z-index: 64;
+}
+.gallery > .album-slot:nth-child(35) {
+  z-index: 65;
+}
+.gallery > .album-slot:nth-child(34) {
+  z-index: 66;
+}
+.gallery > .album-slot:nth-child(33) {
+  z-index: 67;
+}
+.gallery > .album-slot:nth-child(32) {
+  z-index: 68;
+}
+.gallery > .album-slot:nth-child(31) {
+  z-index: 69;
+}
+.gallery > .album-slot:nth-child(30) {
+  z-index: 70;
+}
+.gallery > .album-slot:nth-child(29) {
+  z-index: 71;
+}
+.gallery > .album-slot:nth-child(28) {
+  z-index: 72;
+}
+.gallery > .album-slot:nth-child(27) {
+  z-index: 73;
+}
+.gallery > .album-slot:nth-child(26) {
+  z-index: 74;
+}
+.gallery > .album-slot:nth-child(25) {
+  z-index: 75;
+}
+.gallery > .album-slot:nth-child(24) {
+  z-index: 76;
+}
+.gallery > .album-slot:nth-child(23) {
+  z-index: 77;
+}
+.gallery > .album-slot:nth-child(22) {
+  z-index: 78;
+}
+.gallery > .album-slot:nth-child(21) {
+  z-index: 79;
+}
+.gallery > .album-slot:nth-child(20) {
+  z-index: 80;
+}
+.gallery > .album-slot:nth-child(19) {
+  z-index: 81;
+}
+.gallery > .album-slot:nth-child(18) {
+  z-index: 82;
+}
+.gallery > .album-slot:nth-child(17) {
+  z-index: 83;
+}
+.gallery > .album-slot:nth-child(16) {
+  z-index: 84;
+}
+.gallery > .album-slot:nth-child(15) {
+  z-index: 85;
+}
+.gallery > .album-slot:nth-child(14) {
+  z-index: 86;
+}
+.gallery > .album-slot:nth-child(13) {
+  z-index: 87;
+}
+.gallery > .album-slot:nth-child(12) {
+  z-index: 88;
+}
+.gallery > .album-slot:nth-child(11) {
+  z-index: 89;
+}
+.gallery > .album-slot:nth-child(10) {
+  z-index: 90;
+}
+.gallery > .album-slot:nth-child(9) {
+  z-index: 91;
+}
+.gallery > .album-slot:nth-child(8) {
+  z-index: 92;
+}
+.gallery > .album-slot:nth-child(7) {
+  z-index: 93;
+}
+.gallery > .album-slot:nth-child(6) {
+  z-index: 94;
+}
+.gallery > .album-slot:nth-child(5) {
+  z-index: 95;
+}
+.gallery > .album-slot:nth-child(4) {
+  z-index: 96;
+}
+.gallery > .album-slot:nth-child(3) {
+  z-index: 97;
+}
+.gallery > .album-slot:nth-child(2) {
+  z-index: 98;
+}
+.gallery > .album-slot:nth-child(1) {
+  z-index: 99;
+}
+.gallery > .album-slot:nth-child(0) {
+  z-index: 100;
+}
+.gallery > .album-slot .album-pic {
+  display: block;
+  z-index: 1;
+  position: relative;
+  height: 100%;
+}
+.gallery > .album-slot:after {
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transition: opacity 0.2s ease-out;
+  background: linear-gradient(90deg, #000, transparent);
+  opacity: 0.8;
+  content: "";
+  z-index: 2;
+}
+.gallery > .album-slot span {
+  font-size: 1vw;
+  color: black;
+  text-align: right;
+  position: absolute;
+  transform: translate3d(0, 0px, 0);
+  text-transform: uppercase;
+  opacity: 0;
+  display: block;
+  width: 80%;
+  bottom: 0.3vw;
+  right: 1.1vw;
+  z-index: 3;
+  font-weight: bold;
+  transition: all 0.05s ease-out;
+  text-shadow: 1px 1px 1px #888, 2px 2px 1px #888, 3px 3px 1px #888, 4px 4px 1px #888, 5px 5px 1px #888, 6px 6px 1px #888, 7px 7px 1px #888, 8px 8px 1px #888, 9px 9px 1px #888, 10px 10px 1px #888, 11px 11px 1px #888, 12px 12px 1px #888, 13px 13px 1px #888, 14px 14px 1px #888, 15px 15px 1px #888, 16px 16px 1px #888, 17px 17px 1px #888, 18px 18px 1px #888, 19px 19px 1px #888, 20px 20px 1px #888, 21px 21px 1px #888, 22px 22px 1px #888, 23px 23px 1px #888, 24px 24px 1px #888, 25px 25px 1px #888, 26px 26px 1px #888, 27px 27px 1px #888, 28px 28px 1px #888, 29px 29px 1px #888, 30px 30px 1px #888, 31px 31px 1px #888, 32px 32px 1px #888, 33px 33px 1px #888, 34px 34px 1px #888, 35px 35px 1px #888, 36px 36px 1px #888, 37px 37px 1px #888, 38px 38px 1px #888, 39px 39px 1px #888, 40px 40px 1px #888;
+}
+.gallery.expanded > .album-slot {
+  width: 8.4vw;
+  height: 8.4vw;
+  margin-left: -0.7vw;
+  transform: none;
+}
+.gallery.expanded > .album-slot:after {
+  opacity: 0;
+}
+.gallery.expanded > .album-slot img {
+  left: -25%;
+}/*# sourceMappingURL=style.css.map */

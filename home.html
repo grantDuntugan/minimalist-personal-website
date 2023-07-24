@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Grant's Portfolio Site</title>
     <link rel="icon" type="image/x-icon" href="./imgs/favicon.ico" />
+    <link rel="stylesheet" href="my_styles.css" />
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -229,7 +230,7 @@
                   <div class="carousel-item active">
                     <div class="card-group">
                       <a
-                        class="card mr-4"
+                        class="project-card card mr-4"
                         data-toggle="modal"
                         data-target="#fingerBreakerModal"
                       >
@@ -257,7 +258,7 @@
                       </a>
 
                       <a
-                        class="card mr-4"
+                        class="project-card card mr-4"
                         href="https://www.youtube.com/watch?v=aRnYhrHGSwc"
                         target="_blank"
                       >
@@ -289,7 +290,7 @@
                         </div>
                       </a>
                       <a
-                        class="card"
+                        class="project-card card"
                         href="https://github.com/COGS118A/Group012-Wi23/blob/main/FinalProjectGroup012-Wi23.ipynb"
                         target="_blank"
                       >
@@ -328,7 +329,7 @@
                   <div class="carousel-item">
                     <div class="card-group">
                       <a
-                        class="card mr-4"
+                        class="project-card card mr-4"
                         href="https://impasta-rosta.netlify.app/"
                         target="_blank"
                       >
@@ -365,7 +366,7 @@
                       </a>
 
                       <a
-                        class="card"
+                        class="project-card card"
                         href="https://feudgame.netlify.app/"
                         target="_blank"
                       >
@@ -520,7 +521,7 @@
         </p>
       </div>
 
-      <section class="text-white py-5">
+      <section class="text-white py-5 my-5">
         <div
           class="hobby-card card text-white"
           style="background-color: #343a3f"
@@ -603,24 +604,238 @@
             title="Valorant"
           ></div>
         </div>
+        <div id="game-text" class="text-center p-5">
+          I play a lot of games, but here are some of my favorites that I'm
+          playing right now! I'm a big fan of MMO's in general, mostly because I
+          can play with my friends. I also like to make gaming videos when I
+          have the time!
+        </div>
       </section>
 
-      <section class="text-white py-5">
+      <section
+        class="hobby-card text-white d-flex flex-column justify-content-between py-5 my-5"
+        style="background-color: #343a3f; border-radius: 20px"
+      >
         <div
-          class="hobby-card card text-white"
-          style="background-color: #343a3f"
+          class="d-flex flex-column justify-content-center align-items-center"
         >
           <div
-            class="card-body d-flex flex-column justify-content-center align-items-center"
+            class="container d-flex justify-content-center align-items-center flex-colum"
           >
-            <div
-              id="boba-click-me"
-              class="container d-flex justify-content-center align-items-center flex-column"
-            >
-              <img class="img-fluid w-25" src="imgs/music_4814747.png" />
-              <div class="card-title display-4 text-center">Click me!</div>
+            <img class="img-fluid w-25" src="imgs/music_4814747.png" />
+            <div class="card-title display-4 text-center ml-2">
+              My music taste
             </div>
           </div>
+        </div>
+
+        <div class="container gallery" id="gallery">
+          <!-- images -->
+
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=F64yFFnZfkI"
+            target="_blank"
+          >
+            <span>Say It - Yorushika</span>
+            <img
+              class="album-pic"
+              src="data:image/jpeg;base64,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"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=CWUGikRxGQs"
+            target="_blank"
+          >
+            <span>Sweet Chaos - Day6</span>
+            <img
+              class="album-pic"
+              src="https://snackfever.com/cdn/shop/articles/DAY6-Sweet-Chaos_1000x.png?v=1571845781"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=dpHfziKOYSs"
+            target="_blank"
+          >
+            <span>Dust - Seventeen</span>
+            <img
+              class="album-pic"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAYFBMVEW7u7u9vb25ubnAwMC2traCgoKzs7N+fn5wcHCNjY15eXmlpaWoqKh0dHSTk5NQUFBfX19YWFitra2IiIicnJxAQEBpaWkAAABJSUlOTk46OjpjY2MyMjKamppra2s9PT0Gr3PSAAACmUlEQVR4nO3dbW+qMBTAcU4fQB4qoMB82HXf/1uu6parNx5MvCMZ5P9bljCPpeuhrZUXJUl+mEiSGLkcXY5vQ3dHcveyfP8t5lr861e+D+LLt+eT29OZf2uJb4znua99OX6yXUvNEQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIBF+8+tVfXiy9yzVUYaLH/3B34Yf5YSLXzeaViMEvzFxMafl4KJFbFawQstW8ZateRvJq4JmXaNZdX4plOaJV2dr4rH/VKSNLRZo/asU/BNObuBKuK3cnKP/2+RsreD2gXse1v90VosZb3NnFYyf6uCnd+8Jv6wa5Vkxeh75/XxEvpVpyfr0OdasiTP+tP8xqFIttnsN1qTbXZQY4kU6ZvSs+TcswqvXQTJq9P7/JIVe1bhB71nuYPaJinb9VFLlqTFh6+Ndt5VkdfzS5YkxqRqm4yImscYdenIp38aKZNSnP6dm9/C4fkMO/YOdYX29ciFsSXryOpuLp4tQkdTpyfnclKRp2vYeRGTOn1UnkeP9gGXJC4WVWd0F2PjuZ6h9LQvjlrQZL2vtXkobUMfCm0BW+6KVQwuK1uybgqvzb22qn3QFrCbrNybh8k6F7BNvl1gsg7tWv32U33UXhuHrup2UmkjzR7bYruwOSux66NXe5ZUdR7UVbktd1adlWyzzsP8VlZjRDZDWwxai12os1bNZHna6Wnu2rDK5nhTZsT5UVjqPRkZuydzvSujFYz9bhFLq3t3Twd7EHytc1yfS7bgx4IBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmIaMb5o6UZ1TVzBZDSL61vQT1TjxhsaumqpFYjZjD8mYosYyTHp1bOa3UyWrG4aXBsYnbwYNrqfNOBEAAAAASUVORK5CYII="
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=msnXN7IHRmk"
+          >
+            <span>I didn't want to listen to your "sorry" - Kohana Lam </span>
+            <img
+              class="album-pic"
+              src="https://www.lyrical-nonsense.com/wp-content/uploads/2021/05/HoneyWorks-Gomen-ne-Nanka-Kikitakunakatta.jpg"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=Fpgd3ac3_nM"
+            target="_blank"
+          >
+            <span>Levanter - Stray Kids</span>
+            <img
+              class="album-pic"
+              src="https://kpopreviewed.files.wordpress.com/2019/12/straykids-clelevanter-1.jpg?w=1200"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=Zw7u9uW4pzE"
+            target="_blank"
+          >
+            <span>Neo-Aspect - Roselia</span>
+            <img
+              class="album-pic"
+              src="https://i.bandori.party/u/asset/CJ8Yc9Official-art-Roselia-Episode-2-Neo-Aspect-Title-Screen-fiat4D.png"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=n_BLfA4WCQ0"
+            target="_blank"
+          >
+            <span>Love Fool - EXO</span>
+            <img
+              class="album-pic"
+              src="https://i.ytimg.com/vi/BMGqpXKOgu0/maxresdefault.jpg"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=vcw5THyM7Jo"
+            target="_blank"
+          >
+            <span>If there was an Endpoint - Tuyu</span>
+            <img
+              class="album-pic"
+              src="https://i.ytimg.com/vi/5oq3YsSKccw/maxresdefault.jpg"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=hZmoMyFXDoI"
+            target="_blank"
+          >
+            <span>Some - Bol4</span>
+            <img
+              class="album-pic"
+              src="https://i.ytimg.com/vi/X1Yl5B6HuUk/maxresdefault.jpg"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=m3DZsBw5bnE"
+            target="_blank"
+          >
+            <span>How Can I Love the Heartbreak - AKMU</span>
+            <img
+              class="album-pic"
+              src="https://seoulbeats.com/wp-content/uploads/2019/09/2F7BAEA6-C200-4B8A-8D30-2CCA434F409E-1440x807.jpeg"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=x8VYWazR5mE"
+            target="_blank"
+          >
+            <span>Racing Into the Night - YOASOBI</span>
+            <img
+              class="album-pic"
+              src="https://i.ytimg.com/vi/ORofRTMg-iY/maxresdefault.jpg"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=jJzw1h5CR-I"
+            target="_blank"
+          >
+            <span>Dramaturgy - Eve</span>
+            <img
+              class="album-pic"
+              src="https://i.ytimg.com/vi/NeSkw2xFY5s/maxresdefault.jpg"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=NVbbj5wCuiA"
+            target="_blank"
+          >
+            <span>Hated on by Life Itself - Majiko </span>
+            <img
+              class="album-pic"
+              src="https://kara.moe/previews/15f215b2-db2a-48df-87ee-2a8db43bcff5.11183798.25.jpg"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=ulr0muQKjk0"
+            target="_blank"
+          >
+            <span>11:11 - Taeyeon</span>
+            <img
+              class="album-pic"
+              src="https://kpopreviewed.files.wordpress.com/2016/11/1111taeyeon.png"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=Rh5ok0ljrzA"
+            target="_blank"
+          >
+            <span>Ending Scene - Taeyeon</span>
+            <img
+              class="album-pic"
+              src="https://seoulbeats.com/wp-content/uploads/2017/04/20170428_seoulbeats_iu.jpg"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=GHJyfokY5Dw"
+            target="_blank"
+          >
+            <span>I Don't Know You Anymore - Eric Nam</span>
+            <img
+              class="album-pic"
+              src="https://images.squarespace-cdn.com/content/v1/56eb012f27d4bd29de975fae/1645998910402-U6YDWDWH6ZZG1WEDT9NM/HOK_ERICNAM_HEADER.jpg?format=2500w"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=oBpaB2YzX8s"
+            target="_blank"
+          >
+            <span>It Just Is - eaJ x Seori</span>
+            <img
+              class="album-pic"
+              src="https://i.ytimg.com/vi/oBpaB2YzX8s/maxresdefault.jpg"
+            />
+          </a>
+          <a
+            class="album-slot"
+            href="https://www.youtube.com/watch?v=eSY63LDS2KQ"
+            target="_blank"
+          >
+            <span>Never Forget - Kessoku Band</span>
+            <img
+              class="album-pic"
+              src="https://static1.cbrimages.com/wordpress/wp-content/uploads/2023/01/bocchi-the-rock-kessoku-band.jpg"
+            />
+          </a>
+        </div>
+        <div id="music-text" class="text-center p-5">
+          Imagine having to pick one song from each artist you listen to that
+          you want to show off to other people. I couldn't handle it so I just
+          picked a random one when realistically I could sing 80-90% of each of
+          these artist's ENTIRE discography. I hope you find something in here
+          you like!
         </div>
       </section>
     </section>

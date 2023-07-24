@@ -92,3 +92,55 @@ bobaCard.addEventListener("click", () => {
     }, 10000);
   }
 });
+
+document.addEventListener("DOMContentLoaded", function (event) {
+  enableGalleryScroll();
+  initActionButtons();
+});
+
+var THRESHOLD = 0.6,
+  MAX_SPEED = 25,
+  LEFT = "left",
+  RIGHT = "right",
+  scrolling,
+  pageX,
+  screenWidth;
+
+function enableGalleryScroll() {
+  var gallery = document.getElementById("gallery");
+
+  gallery.onmouseover = function (event) {
+    pageX = event.clientX || event.screenX;
+    screenWidth = window.innerWidth;
+    var currentPosPercentage = (screenWidth - pageX) / screenWidth;
+    var speed;
+
+    if (currentPosPercentage > THRESHOLD) {
+      speed = calculateSpeed(LEFT, currentPosPercentage);
+      setScroll(gallery, LEFT, speed);
+    } else if (currentPosPercentage < 1 - THRESHOLD) {
+      speed = calculateSpeed(RIGHT, currentPosPercentage);
+      setScroll(gallery, RIGHT, speed);
+    } else {
+      endScroll();
+    }
+  };
+}
+
+function calculateSpeed(direction, ratio) {
+  var positionPercentage = direction === LEFT ? ratio : 1 - ratio,
+    speedPercentage = (positionPercentage - THRESHOLD) / (1 - THRESHOLD);
+  return speedPercentage * MAX_SPEED;
+}
+
+function endScroll() {
+  clearInterval(scrolling);
+}
+
+function setScroll(object, direction, speed) {
+  endScroll();
+  scrolling = setInterval(function () {
+    var newPos = direction === LEFT ? -1 * speed : speed;
+    object.scrollLeft += newPos;
+  }, 10);
+}
